@@ -7,7 +7,9 @@ import APIFeatures from "../utils/apiFeatures";
 // Get all rooms =>   /api/rooms
 const allRooms = catchAsyncErrors(async (req, res) => {
 
-  const resPerPage = 4;
+
+
+  const resPerPage = 2;
   const roomsCount = await Room.countDocuments();
 
   const apiFeatures = new APIFeatures(Room.find(), req.query)
@@ -44,8 +46,7 @@ const getSingleRoom = catchAsyncErrors(async (req, res, next) => {
   const room = await Room.findById(req.query.id);
 
   if (!room) {
-    return next(new ErrorHandler("Room not found with this ID", 404));
-  }
+c  }
 
   res.status(200).json({
     success: true,
