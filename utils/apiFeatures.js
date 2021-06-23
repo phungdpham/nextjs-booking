@@ -20,7 +20,7 @@ class APIFeatures {
 
   filter() {
 
-    const queryCopy = { ... this.queryStr }
+    const queryCopy = { ...this.queryStr }
 
 
     // Remove fields from query

@@ -24,7 +24,7 @@ const Home = () => {
   }, []);
 
   const handlePagination = (pageNumber) => {
-    window.push = `/page=${pageNumber}`;
+    router.push(`/?page=${pageNumber}`);
   };
 
   let count = roomsCount;

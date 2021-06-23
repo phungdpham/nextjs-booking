@@ -10,7 +10,7 @@ const dbConnect = () => {
     useUnifiedTopology: true,
     useFindAndModify: false,
     useCreateIndex: true,
-  });
+  })
 };
 
 export default dbConnect;

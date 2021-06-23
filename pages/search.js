@@ -3,7 +3,7 @@ import Layout from "../components/layout/Layout";
 
 
 
-export default function Index() {
+export default function SearchPage() {
   return (
     <Layout title='Search Rooms'>
       <Search />
